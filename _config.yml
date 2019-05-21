@@ -28,7 +28,7 @@ github_username:  sequentialchaos
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-midnight
+theme: jekyll-theme-modernist
 plugins:
   - jekyll-feed
 
