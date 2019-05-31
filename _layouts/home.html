@@ -28,14 +28,14 @@ layout: default
       {%- endfor -%}
     </ul>
     
-    {% for category in site.categories %}
+    <!-- {% for category in site.categories %}
     <h3>{{ category[0] }}</h3>
     <ul>
       {% for post in category[1] %}
         <li><a href="{{ post.url | relative_url}}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
-  {% endfor %}
+  {% endfor %} -->
     <!-- <p class="feed-subscribe"><svg class="svg-icon orange"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p> -->
   {%- endif -%}
 
