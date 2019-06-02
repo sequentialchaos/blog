@@ -2,7 +2,8 @@
 layout: post
 title:  "New York"
 date:   2019-05-25 10:42:40 -0400
-# categories: recurse
+categories: recurse
+tags: ["hefs", "ewfewfwef", "efi"]
 ---
 
 ## Street Cats
