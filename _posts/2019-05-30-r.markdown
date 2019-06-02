@@ -5,6 +5,8 @@ date: 2019-05-30 10:42:40 -0400
 categories: recurse
 ---
 
-![JavaScript Maybe?](/assets/js/test.js)
+![JavaScript Maybe?](/blog/assets/js/test.js)
 
-![Willis and Stan](/assets/images/0.jpg)
+![Willis and Stan](/blog/assets/images/0.jpg)
+
+![cat and bird](/blog/assets/cat_and_bird.svg)
