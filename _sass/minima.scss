@@ -21,7 +21,7 @@ $spacing-unit: 30px !default;
 
 $text-color: rgb(54, 54, 54) !default;
 $background-color: #e0e0e0 !default;
-$brand-color: rgb(41, 165, 159) !default;
+$brand-color: rgb(0, 178, 194) !default;
 
 $grey-color: rgb(92, 92, 92) !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -41,11 +41,12 @@ $on-medium: $on-palm !default;
 $on-large: $on-laptop !default;
 
 $title-font:'Calligraffitti';
-$title-color:rgb(144, 39, 163);;
+$title-color:rgb(1, 123, 139);;
 
 
 $post-title-color: rgb(32, 36, 36);
 $post-title-font: 'Delius Swash Caps';
+$post-link-color: rgb(130, 19, 233);
 
 $nav-font: 'Hi Melody';
 

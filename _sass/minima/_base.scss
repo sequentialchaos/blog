@@ -136,7 +136,9 @@ h6 {
   * Links
   */
 a {
-  color: $brand-color;
+
+  color: $post-link-color;
+  // font-weight: 600;
   text-decoration: none;
 
   &:visited {
@@ -155,8 +157,12 @@ a {
       text-decoration: underline;
     }
   }
-}
 
+
+}
+.social-links {
+  color: $title-color;
+}
 
 /**
   * Blockquotes

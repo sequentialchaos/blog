@@ -237,10 +237,15 @@
 
 .post-link {
   display: block;
+  color: $post-link-color;
+  font-weight: 600;
   @include relative-font-size(1.5);
 }
 
-
+p > a {
+  color: $post-link-color;
+  font-weight: 600
+}
 
 /**
  * Posts
