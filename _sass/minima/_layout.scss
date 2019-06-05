@@ -1,7 +1,7 @@
 /**
  * Site header
  */
- .site-header {
+.site-header {
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
@@ -9,12 +9,15 @@
 
   // Positioning context for the mobile navigation icon
   position: relative;
+  background-color: $header-background;
 }
 
 .site-title {
-  @include relative-font-size(1.625);
+  @include relative-font-size(1.725);
+  color: $title-color;
+  font-family: $title-font, cursive;
   font-weight: 300;
-  letter-spacing: -1px;
+  letter-spacing: 1.2px;
   margin-bottom: 0;
   float: left;
 
@@ -22,13 +25,12 @@
     padding-right: 45px;
   }
 
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
 }
 
+
+
 .site-nav {
+  @include relative-font-size(1.525);
   position: absolute;
   top: 9px;
   right: $spacing-unit / 2;
@@ -36,9 +38,10 @@
   border: 1px solid $grey-color-light;
   border-radius: 5px;
   text-align: right;
+  font-family: $nav-font, cursive;
 
   .nav-trigger {
-      display: none;
+    display: none;
   }
 
   .menu-icon {
@@ -49,7 +52,7 @@
     padding-top: 10px;
     text-align: center;
 
-    > svg path {
+    >svg path {
       fill: $grey-color-dark;
     }
   }
@@ -63,18 +66,30 @@
     cursor: pointer;
   }
 
-  input ~ .trigger {
+  input~.trigger {
     clear: both;
     display: none;
   }
 
-  input:checked ~ .trigger {
+  input:checked~.trigger {
     display: block;
     padding-bottom: 5px;
   }
 
+  .projects {
+    color: $projects-color;
+  }
+  
+  .sketches {
+    color: $sketches-color;
+  }
+
+  .about {
+    color: $about-color;
+  }
+
   .page-link {
-    color: $text-color;
+    // color: $text-color;
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
@@ -83,6 +98,7 @@
     &:not(:last-child) {
       margin-right: 0;
     }
+
     margin-left: 20px;
   }
 
@@ -100,7 +116,7 @@
       display: none;
     }
 
-    input ~ .trigger {
+    input~.trigger {
       display: block;
     }
 
@@ -111,6 +127,7 @@
       &:not(:last-child) {
         margin-right: 20px;
       }
+
       margin-left: auto;
     }
   }
@@ -124,6 +141,7 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+  background-color: $footer-background;
 }
 
 .footer-heading {
@@ -146,7 +164,7 @@
 
 .footer-col {
   width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-  width:         calc(100% - (#{$spacing-unit} / 2));
+  width: calc(100% - (#{$spacing-unit} / 2));
   margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
 }
@@ -154,28 +172,28 @@
 .footer-col-1,
 .footer-col-2 {
   width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
+  width: calc(50% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
   width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-  width:         calc(100% - (#{$spacing-unit} / 2));
+  width: calc(100% - (#{$spacing-unit} / 2));
 }
 
 @media screen and (min-width: $on-large) {
   .footer-col-1 {
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: calc(35% - (#{$spacing-unit} / 2));
   }
 
   .footer-col-2 {
     width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: calc(20% - (#{$spacing-unit} / 2));
   }
 
   .footer-col-3 {
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: calc(45% - (#{$spacing-unit} / 2));
   }
 }
 
@@ -207,7 +225,7 @@
   margin-left: 0;
   list-style: none;
 
-  > li {
+  >li {
     margin-bottom: $spacing-unit;
   }
 }
@@ -236,6 +254,10 @@
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
+  color: $post-title-color;
+  // font-weight: 600;
+  font-family: $post-title-font, cursive;
+  text-decoration: underline;
 
   @media screen and (min-width: $on-large) {
     @include relative-font-size(2.625);
@@ -274,17 +296,28 @@
 .social-media-list {
   display: table;
   margin: 0 auto;
+
   li {
     float: left;
     margin: 0 5px;
-    &:first-of-type { margin-left: 0 }
-    &:last-of-type { margin-right: 0 }
+
+    &:first-of-type {
+      margin-left: 0
+    }
+
+    &:last-of-type {
+      margin-right: 0
+    }
+
     a {
       display: block;
       padding: $spacing-unit / 4;
       border: 1px solid $grey-color-light
     }
-    &:hover .svg-icon { fill: currentColor; }
+
+    &:hover .svg-icon {
+      fill: currentColor;
+    }
   }
 }
 
@@ -294,5 +327,5 @@
  */
 .one-half {
   width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
+  width: calc(50% - (#{$spacing-unit} / 2));
 }
